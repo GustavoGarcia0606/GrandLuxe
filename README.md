@@ -1,3 +1,3 @@
-integrantes do grupo
+** Integrantes do grupo:
 
-João Vitor-Gustavo Garcia-Maria Eduarda
+João Vitor, Gustavo Garcia, Maria Eduarda
