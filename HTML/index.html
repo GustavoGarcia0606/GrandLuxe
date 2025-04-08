@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrandLuxe | Hotéis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrandLuxe</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-   <header class="menu">
-    <h1>GrandLuxe</h1>
-    <nav>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Sobre">Sobre</a></li>
-      </ul>
-      <form action="/buscar" method="get">
-        <input type="text" name="q" placeholder="Pesquisar..." />
-        <button type="submit">Buscar</button>
-      </form>
-      <ul>
-        <li><a href="#Suporte">Suporte</a></li>
-        <li><a href="#Reservas">Reservas</a></li>
-      </ul>
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">🏝️</div>
+      <span>GRANDLUXE</span>
+    </div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <span>|</span>
+      <a href="#">Sobre</a>
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar" />
+        <button>🔍</button>
+      </div>
+      <a href="#">Suporte</a>
+      <span>|</span>
+      <a class="reservas-btn" href="#">Reservas</a>
     </nav>
+    <div class="user">
+      <a href="#">Login</a>
+      <div class="avatar">👤</div>
+    </div>
   </header>
 
-  <footer>
-    <p>&copy; 2025 GrandLuxe | Reservas de Hotéis. Todos os direitos reservados.</p>
+  <section class="hero">
+    <div class="overlay">
+      <h1>GrandLuxe</h1>
+      <p>"RESERVE SEU HOTEL COM PRATICIDADE E CONFORTO."</p>
+      <a class="search-hotels-btn" href="#">Procurar hotéis</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>RECOMENDAÇÕES</div>
+    <div>FEEDBACK</div>
   </footer>
-
+  <footer>
+    <p>&copy; 2025 GrandLuxe. Todos os direitos reservados.</p>
+  </footer>
 </body>
-
 </html>
