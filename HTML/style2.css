@@ -11,12 +11,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(to bottom right, #051d3f, #67a4f5);
   }
 
   .container {
     display: flex;
     width: 900px;
-    height: 550px;
+    height: 670px;
     background-color: white;
     border-radius: 25px;
     overflow: hidden;
