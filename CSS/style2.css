@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #d9d9d9;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 670px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-left {
+  flex: 1;
+  padding: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.login-left h2 {
+  color: #4A77B6;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.login-left .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4A77B6;
+  font-size: 1rem;
+  margin-bottom: 100px;
+}
+
+/* Estilo para o ícone Font Awesome */
+.login-left .logo i {
+  content: '\f015';  /* Código hexadecimal para o ícone */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 1.5rem;  /* Tamanho do ícone */
+  margin-right: 5px;
+  color: #4A77B6;
+}
+
+/* Usando um ícone específico (como o código '\e587') */
+.login-left .logo i::before {
+  content: '\e587';  /* O código para o ícone */
+  font-family: 'Material Icons';  /* A fonte Material Icons que contém o ícone */
+  font-size: 1.5rem;  /* Tamanho do ícone */
+  margin-right: 5px;  /* Espaço entre o ícone e o texto */
+  color: #4A77B6;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #eee;
+  font-size: 1rem;
+  color: #8f8f8f;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group.icon {
+  position: relative;
+}
+
+.form-group.icon::before {
+  content: "\f007"; /* Código do ícone de perfil (fa-user) */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Necessário para a versão 5+ do Font Awesome */
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+
+.form-group.password::before {  
+  content: "\f023"; /* Código do ícone de senha (fa-lock) */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; /* Necessário para a versão 5+ do Font Awesome */
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: #8f8f8f;
+}
+
+.form-group input {
+  padding-left: 40px; /* Espaço para o ícone */
+}
+
+.forgot {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: right;
+  transition: color 0.3s ease;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 25px;
+  background-color: #4A77B6;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-left a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #4A77B6;
+  text-decoration: none;
+}
+
+.login-left a:hover {
+  text-decoration: underline;
+}
+
+.login-right {
+  flex: 1;
+  background: url('../img/background-right.svg') center/cover no-repeat;
+  position: relative;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.login-right-content {
+  position: relative;
+  z-index: 1;
+}
+
+.login-right h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.login-right p {
+  font-size: 1rem;
+}
+
+.login-right svg {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: auto;
+  z-index: 1;
+}
