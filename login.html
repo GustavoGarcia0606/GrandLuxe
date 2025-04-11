@@ -25,7 +25,7 @@
         <input type="password" placeholder="Senha">
       </div>
       <div class="forgot">Esqueceu sua senha?</div>
-      <button>Log in</button>
+      <button id="loginBtn">Log in</button>
       <a href="cadastro.html">ou Crie uma conta</a>
     </div>
 
@@ -36,6 +36,12 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById('loginBtn').addEventListener('click', function () {
+      window.location.href = 'index.html';
+    });
+  </script>
 
 </body>
 

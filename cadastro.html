@@ -10,8 +10,7 @@
   <div class="container">
     <div class="form-section">
       <div class="logo">
-       
-        <img src="" alt="Logo" /> 
+        <img src="https://img.icons8.com/?size=100&id=AVe9YeyAXTql&format=png&color=000000" alt="Logo" /> 
         GRANDLUXE
       </div>
 
@@ -21,14 +20,14 @@
 
       <h2>Cadastrar-se</h2>
 
-      <form class="form-group">
-        <input type="text" placeholder="Nome" value="" />
-        <input type="email" placeholder="Email" value="" />
+      <form class="form-group" id="cadastroForm">
+        <input type="text" placeholder="Nome" id="nome" />
+        <input type="email" placeholder="Email" id="email" />
         <div class="form-double">
-          <input type="password" placeholder="Senha" value="" />
-          <input type="password" placeholder="Confirmar senha" value="" />
+          <input type="password" placeholder="Senha" id="senha" />
+          <input type="password" placeholder="Confirmar senha" id="confirmarSenha" />
         </div>
-        <button class="submit-btn">Cadastrar-se</button>
+        <button type="button" class="submit-btn" onclick="validarCadastro()">Cadastrar-se</button>
       </form>
 
       <div class="links">
@@ -43,5 +42,28 @@
       </div>
     </div>
   </div>
+  <script>
+    function validarCadastro() {
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const senha = document.getElementById("senha").value;
+      const confirmarSenha = document.getElementById("confirmarSenha").value;
+
+      if (!nome || !email || !senha || !confirmarSenha) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+      }
+
+      if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem.");
+        return;
+      }
+
+      // Redireciona para index.html se tudo estiver certo
+      window.location.href = "index.html";
+    }
+  </script>
+
+  
 </body>
 </html>
