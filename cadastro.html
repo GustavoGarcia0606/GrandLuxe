@@ -42,27 +42,8 @@
       </div>
     </div>
   </div>
-  <script>
-    function validarCadastro() {
-      const nome = document.getElementById("nome").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const senha = document.getElementById("senha").value;
-      const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-      if (!nome || !email || !senha || !confirmarSenha) {
-        alert("Por favor, preencha todos os campos.");
-        return;
-      }
-
-      if (senha !== confirmarSenha) {
-        alert("As senhas não coincidem.");
-        return;
-      }
-
-      // Redireciona para index.html se tudo estiver certo
-      window.location.href = "index.html";
-    }
-  </script>
+  <script src="SCRIPT/script.js"></script>
 
   
 </body>
