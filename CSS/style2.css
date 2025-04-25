@@ -126,7 +126,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.button {
+button {
   width: 100%;
   padding: 12px;
   margin-top: 30px;
