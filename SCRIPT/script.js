@@ -19,19 +19,42 @@ document.getElementById('loginBtn').addEventListener('click', function () {
     } else {
       alert('Preencha todos os campos!');
     }
-  })  
-  document.getElementById('loginBtn').addEventListener('click', function () {
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value.trim();
-    const errorMsg = document.getElementById('errorMsg');
-
-    if (username === '' || password === '') {
-      errorMsg.textContent = 'Por favor, preencha todos os campos antes de continuar.';
-    } else {
-      errorMsg.textContent = '';
+  }); 
+  document.getElementById('reservaForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const nomeCompleto = document.querySelector('input[type="text"]').value;
+    const dataNascimento = document.querySelector('input[type="date"]').value;
+    const telefone = document.querySelector('input[type="tel"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const tipoQuarto = document.querySelector('select').value;
+    const qtdeAdultosCrianca = document.querySelector('select').value;
+    const checkIn = document.querySelector('input[type="date"]').value;
+    const checkOut = document.querySelector('input[type="date"]').value;
+    const preferenciasPedidos = document.querySelector('input[type="text"]').value;
+    if (nomeCompleto && dataNascimento && telefone && email && tipoQuarto && qtdeAdultosCrianca && checkIn && checkOut && preferenciasPedidos) {
       window.location.href = 'index.html';
+    } else {
+      alert('Preencha todos os campos!');
     }
+    
   });
+  function validarReserva() {
+    const nomeCompleto = document.querySelector('input[type="text"]').value;
+    const dataNascimento = document.querySelector('input[type="date"]').value;
+    const telefone = document.querySelector('input[type="tel"]').value;
+    const email = document.querySelector('input[type="email"]').value;
+    const tipoQuarto = document.querySelector('select').value;
+    const qtdeAdultosCrianca = document.querySelector('select').value;
+    const checkIn = document.querySelector('input[type="date"]').value;
+    const checkOut = document.querySelector('input[type="date"]').value;
+    const preferenciasPedidos = document.querySelector('input[type="text"]').value;
+    if (!nomeCompleto || !dataNascimento || !telefone || !email || !tipoQuarto || !qtdeAdultosCrianca || !checkIn || !checkOut || !preferenciasPedidos) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+    alert("Reserva realizada com sucesso!");
+    window.location.href = "index.html";
+  }
   function validarCadastro() {
     const nome = document.getElementById("nome").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -55,7 +78,6 @@ document.getElementById('loginBtn').addEventListener('click', function () {
       senha: senha
     };
    
-   
     localStorage.setItem("usuarioCadastro", JSON.stringify(usuario));
    
     alert("Cadastro realizado com sucesso!");
@@ -64,3 +86,4 @@ document.getElementById('loginBtn').addEventListener('click', function () {
    
    
   }
+

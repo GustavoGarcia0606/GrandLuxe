@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo de Reserva</title>
+  <link rel="stylesheet" href="CSS/styleReserva.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="overlay">
+        <img src="" alt="Imagem de fundo" class="background">
+        <div class="content">
+          <h1>PREPARE-SE PARA <br> VIVER MOMENTOS <br> INESQUECÍVEIS!</h1>
+          <p>Com uma reserva simples e rápida, escolha suas datas e personalize sua experiência.</p>
+          <div class="terms">
+            <input type="checkbox" id="termos">
+            <label for="termos">Aceito os <a href="#">Termos e Condições</a> e a <a href="#">Política de Privacidade</a> do hotel, incluindo as políticas de cancelamento e reembolso. <a href="#">Saiba mais</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="right-panel">
+      <h2>Processo de reserva</h2>
+      <form class="formulario" id="reservaForm">
+        <div class="input-group">
+          <input type="text" placeholder="Nome completo">
+          <input type="date" placeholder="Data de nascimento">
+        </div>
+        <div class="input-group">
+          <input type="tel" placeholder="Telefone">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <select>
+            <option>Tipo de quarto</option>
+          </select>
+          <select>
+            <option>Qtde de adultos/ crianças</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <input type="date" placeholder="Check-in">
+          <input type="date" placeholder="Check-out">
+        </div>
+        <div class="input-full">
+          <input type="text" placeholder="Preferências/ Pedidos">
+        </div>
+        <p class="note">*Informe os dados para reserva</p>
+        <button type="button" class="button" onclick="validarReserva()"><a href="index.html"> Reservar</button>
+      </form>
+    </div>
+  </div>
+  <script src="SCRIPT/script.js"></script>
+</body>
+</html>
+ 
