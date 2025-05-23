@@ -15,6 +15,9 @@ html {
 .container {
   display: flex;
   height: 100vh;
+  justify-content: space-between; /* distribui left e right */
+  align-items: center; /* centraliza verticalmente */
+  padding-right: 40px; /* espaçamento da direita */
 }
 
 /* Painel esquerdo */
@@ -28,7 +31,6 @@ html {
   color: white;
   display: flex;
   align-items: flex-end;
-  image-rendering: auto;
   box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -60,12 +62,14 @@ html {
 
 /* Painel direito */
 .right-panel {
-  width: 60%;
-  background-color: #fff;
-  padding: 40px 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 900px;
+  height: 550px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  background: white;
+  margin-left: auto; /* empurra para a direita */
 }
 
 .formulario {
@@ -76,11 +80,11 @@ html {
   max-width: 800px;
 }
 
-.formulario h2 {
-  text-align: center;
+.formulario h1 {
+  text-align: right;
   color: #2874f0;
   margin-bottom: 90px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .input-group {
@@ -112,7 +116,6 @@ html {
   margin-top: -10px;
 }
 
-/* Notas posicionadas acima dos campos */
 .note-checkin,
 .note-checkout {
   position: absolute;
@@ -121,11 +124,12 @@ html {
   top: -18px;
 }
 
-.note-birthday{
+.note-birthday {
   position: absolute;
   font-size: 12px;
   color: gray;
-  top: 332px;
+  top: 337px;
+  right: 23%;
 }
 
 .note-checkin {
@@ -136,11 +140,6 @@ html {
   left: 52%;
 }
 
-.note-birthday {
-  right: 23%;
-}
-
-/* Notas posicionadas abaixo dos campos */
 .note-reserva {
   position: absolute;
   font-size: 16px;
@@ -164,4 +163,34 @@ button {
 
 button:hover {
   background-color: #4584eb;
+}
+
+/* Ícone do avião no canto superior direito */
+.icon-plane {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: auto;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo da imagem do avião */
+.icon-plane img {
+  width: 100%;
+  height: auto;
+}
+
+/* Rastro pontilhado atrás do avião */
+.icon-plane .trilha {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  width: 50px;
+  height: 0;
+  border-top: 2px dotted rgba(40, 116, 240, 0.6);
+  transform: translateY(-50%);
+  z-index: -1;
 }

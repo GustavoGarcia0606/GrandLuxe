@@ -33,7 +33,7 @@ body {
 
 .form-section h2 {
   font-size: 32px;
-  color: #4A77B6;
+  color: #2874f0;
   margin-bottom: 30px;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .submit-btn:hover {
-  background-color: #2c2879;
+  background-color: #5c8fe7;
 }
 
 .links {
@@ -98,9 +98,10 @@ body {
 }
 
 .links a {
-  color: #5c7db5;
+  color: #2874f0;
   text-decoration: none;
-  margin-left: 5px;
+  margin-left: 2px;
+  text-decoration: underline;
 }
 
 .right-section {
@@ -118,7 +119,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(31, 95, 214, 0.55);
+  background: #1f5fd68c;
 }
 
 .right-section .text {
@@ -141,7 +142,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  color: #4A77B6;
+  color: #2874f0;
   font-weight: bold;
   font-size: 18px;
 }
