@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ html {
   height: 100vh;
 }
 
+/* Painel esquerdo */
 .left-panel {
   width: 40%;
   background-image: url(https://images.unsplash.com/photo-1501785888041-af3ef285b470);
@@ -56,15 +58,14 @@ html {
   text-decoration: underline;
 }
 
+/* Painel direito */
 .right-panel {
   width: 60%;
   background-color: #fff;
   padding: 40px 60px;
   display: flex;
   justify-content: center;
-  /* Centraliza horizontalmente */
   align-items: center;
-  /* Centraliza verticalmente */
 }
 
 .formulario {
@@ -78,54 +79,87 @@ html {
 .formulario h2 {
   text-align: center;
   color: #2874f0;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   font-size: 30px;
 }
 
 .input-group {
   display: flex;
   gap: 20px;
+  position: relative;
 }
 
 .input-group input,
 .input-group select,
 .input-full input {
-  width: 100%;
-  padding: 12px;
+  padding: 12px 12px 12px 15px;
+  border: none;
   border-radius: 20px;
-  border: 1px solid #ccc;
-  background-color: #ffffff;
+  background-color: #eeeeee;
+  font-size: 14px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .input-full {
   width: 100%;
 }
 
+/* Notas gerais */
 .note {
   font-size: 12px;
   color: gray;
   margin-top: -10px;
 }
 
-.note-birthday {
+/* Notas posicionadas acima dos campos */
+.note-checkin,
+.note-checkout {
+  position: absolute;
   font-size: 12px;
   color: gray;
-  margin-top: -10px;
-  margin-bottom: -25px;
-  text-align: right;
-  padding-right: 34%;
+  top: -18px;
 }
 
+.note-birthday{
+  position: absolute;
+  font-size: 12px;
+  color: gray;
+  top: 332px;
+}
+
+.note-checkin {
+  left: 0;
+}
+
+.note-checkout {
+  left: 52%;
+}
+
+.note-birthday {
+  right: 23%;
+}
+
+/* Notas posicionadas abaixo dos campos */
+.note-reserva {
+  position: absolute;
+  font-size: 16px;
+  color: gray;
+  top: 250px;
+  right: 24%;
+}
+
+/* Botão */
 button {
   align-self: center;
-  padding: 12px 30px;
+  padding: 12px 40px;
   background-color: #2874f0;
   color: white;
   border: none;
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 button:hover {

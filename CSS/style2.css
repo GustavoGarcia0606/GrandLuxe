@@ -1,159 +1,111 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #e0e0e0;
+  background: #d3d3d3;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #d9d9d9;
 }
 
 .container {
   display: flex;
-  width: 1200px;
-  height: 670px;
-  background-color: white;
-  border-radius: 25px;
+  width: 900px;
+  height: 550px;
+  border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  background: white;
 }
 
-.login-left {
-  flex: 1;
-  padding: 170px;
+.form-section {
+  flex: 3;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 100px;
-  padding-top: 50px;
 }
 
-.login-left h2 {
+.form-section h2 {
+  font-size: 32px;
   color: #4A77B6;
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-.login-left .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #4A77B6;
-  font-size: 1rem;
-  margin-bottom: 100px;
-}
-
-/* Estilo para o ícone Font Awesome */
-.login-left .logo i {
-  content: '\f015';  /* Código hexadecimal para o ícone */
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-size: 1.5rem;  /* Tamanho do ícone */
-  margin-right: 5px;
-  color: #4A77B6;
-}
-
-/* Usando um ícone específico (como o código '\e587') */
-.login-left .logo i::before {
-  content: '\e587';  /* O código para o ícone */
-  font-family: 'Material Icons';  /* A fonte Material Icons que contém o ícone */
-  font-size: 1.5rem;  /* Tamanho do ícone */
-  margin-right: 5px;  /* Espaço entre o ícone e o texto */
-  color: #4A77B6;
+  margin-bottom: 30px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  background-color: #eee;
-  font-size: 1rem;
-  color: #8f8f8f;
-  outline: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.form-group.icon {
+.input-icon {
   position: relative;
 }
 
-.form-group.icon::before {
-  content: "\f007"; /* Código do ícone de perfil (fa-user) */
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; /* Necessário para a versão 5+ do Font Awesome */
+.input-icon i {
   position: absolute;
-  left: 16px;
   top: 50%;
+  left: 15px;
   transform: translateY(-50%);
-  font-size: 0.9rem;
   color: #8f8f8f;
+  font-size: 16px;
 }
 
-.form-group.password::before {  
-  content: "\f023"; /* Código do ícone de senha (fa-lock) */
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; /* Necessário para a versão 5+ do Font Awesome */
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
-  color: #8f8f8f;
-}
-
-.form-group input {
-  padding-left: 40px; /* Espaço para o ícone */
-}
-
-.forgot {
-  font-size: 0.85rem;
-  color: #888;
-  font-style: italic;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  text-align: right;
-  transition: color 0.3s ease;
-}
-
-button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 30px;
+.input-icon input {
+  padding: 12px 12px 12px 40px;
   border: none;
-  border-radius: 25px;
-  background-color: #4A77B6;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: #eeeeee;
+  font-size: 14px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
 }
 
-.login-left a {
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: #4A77B6;
-  text-decoration: none;
+.form-double {
+  display: flex;
+  gap: 10px;
 }
 
-.login-left a:hover {
-  text-decoration: underline;
-}
-
-.login-right {
+.form-double .input-icon {
   flex: 1;
-  background: url('../img/background-right.svg') center/cover no-repeat;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2b68d3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2c2879;
+}
+
+.links {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #0e0d0d;
+}
+
+.links a {
+  color: #5c7db5;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.right-section {
+  flex: 1;
+  background: url(https://thumbs.dreamstime.com/b/piscina-de-luxo-com-palmeiras-%C3%A0-noite-durante-o-p%C3%B4r-do-sol-na-tail%C3%A2ndia-praia-tropical-sunset-235426163.jpg) center/cover no-repeat;
   position: relative;
   color: white;
   padding: 40px;
@@ -162,36 +114,50 @@ button {
   justify-content: center;
 }
 
-.login-right::before {
-  content: '';
+.right-section::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.login-right-content {
+.right-section .text {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.login-right h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.right-section h1 {
+  font-size: 30px;
+  font-weight: 900;
   line-height: 1.3;
 }
 
-.login-right p {
-  font-size: 1rem;
+.right-section p {
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-.login-right svg {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  width: 100px;
-  height: auto;
-  z-index: 1;
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #4A77B6;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.top-link {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.top-link a {
+  color: #005cfa;
+  text-decoration: none;
+  font-weight: bold;
 }

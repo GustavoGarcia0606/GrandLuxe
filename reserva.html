@@ -27,6 +27,7 @@
     <div class="right-panel">
       <form class="formulario" id="reservaForm">
         <h2>Processo de reserva</h2>
+        <p class="note-reserva">Informe os dados para reserva:</p>
         <p class="note-birthday">*Data de nascimento</p>
         <div class="input-group">
           <input type="text" placeholder="Nome completo">
@@ -43,13 +44,14 @@
           <input type="number" placeholder="Qtde de adultos/ crianças" min="0" step="1">
         </div>
         <div class="input-group">
+          <p class="note-checkin">*Check-in</p>
           <input type="date" placeholder="Check-in">
+          <p class="note-checkout">*Check-out</p>
           <input type="date" placeholder="Check-out">
         </div>
         <div class="input-full">
           <input type="text" placeholder="Preferências/ Pedidos">
         </div>
-        <p class="note">*Informe os dados para reserva</p>
         <button type="button" onclick="validarReserva()">Reservar</button>
       </form>
     </div>
