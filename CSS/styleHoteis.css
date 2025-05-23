@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+ 
+body {
+  color: #fff;
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+ 
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: #2875f0d3;
+}
+ 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+ 
+.logo-icon {
+  font-size: 24px;
+}
+ 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+ 
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+ 
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff22;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+ 
+.search-box input::placeholder {
+  color: #ffffff;
+}
+ 
+ 
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px;
+  width: 120px;
+}
+ 
+.search-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+.reservas-btn {
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+ 
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+ 
+.user a {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 16px;
+}
+
+.container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.hotel-details {
+    width: 70%;
+}
+
+.hotel-details h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.main-img {
+    width: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200x;
+}
+
+.thumbs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    flex: 1; 
+}
+
+.thumbs img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #2874f0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.avaliacao .stars {
+    color: orange;
+    font-size: 20px;
+}
+
+.avaliacao .nota {
+    margin-left: 10px;
+    color: rgb(37, 184, 37);
+    font-weight: bold;
+}
+
+.avaliacao a {
+    font-size: 13px;
+    margin-left: 65%;
+    padding: 8px 55px;
+    border-radius: 20px;
+    background: #2874f0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.avaliacao .reservas-btn:hover {
+    background: #5c8fe7;
+    color: #fff;
+}
+
+
+.endereco {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.endereco i {
+    margin-right: 5px;
+    color: #2874f0;
+}
+
+.descricao p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.descricao strong {
+    margin: 20px 0 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+
+.descricao .read-more {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 0px solid #2874f0;
+    background: #2874f0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.descricao .read-more:hover {
+    background: #5c8fe7;
+    color: #fff;
+}
+
+hr {
+    margin: 30px 0 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.comodidades {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.comodidades .icones {
+    display: flex;
+    color: #2874f0;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.hoteis-relacionados {
+    margin-top: 40px;
+    flex: 1;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #555;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.hotel-item {
+    display: flex;
+    gap: 10px;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hotel-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hotel-item h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.hotel-item p {
+    font-size: 12px;
+    color: #555;
+}
+
+.hotel-item .stars {
+    color: orange;
+    font-size: 14px;
+}
+
+.back-arrow {
+  display: inline-flex;
+  align-items: center;
+  color: #2874f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 61%;
+}
+
+.back-arrow i {
+  margin-right: -60px;
+}
+
+.back-arrow:hover {
+  color: #007BFF;
+}
+
+.footer {
+  background-color: #2874f0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    margin-left: 100px;
+}
+
+.footer .col-md-4 {
+  flex-basis: 33.33%;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer .copyright p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer .contato {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer .contato i {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.footer .contato p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer .links-uteis {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer .links-uteis ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer .links-uteis li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer .links-uteis a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .links-uteis a:hover {
+  color: #ccc;
+}

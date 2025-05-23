@@ -1,11 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrandLuxe | Hotéis</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Grand Elegance | GrandLuxe</title>
+
+    <link rel="stylesheet" href="CSS/styleHoteis.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">🏨</div>
+            <span>GRANDLUXE</span>
+        </div>
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <span>|</span>
+            <a href="#">Sobre</a>
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar" />
+                <button>🔍</button>
+            </div>
+            <a href="#">Suporte</a>
+            <span>|</span>
+            <a class="reservas-btn" href="hoteis.html">Reservas</a>
+        </nav>
+
+        <div class="user">
+            <a href="login.html">Login</a>
+            <div class="avatar">👤</div>
+        </div>
+    </header>
+    <main class="container">
+        <a href="index.html" class="back-arrow">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <section class="hotel-details">
+            <h1>Hotel Grand Elegance</h1>
+            <div class="images">
+                <img class="main-img" src="img/hotel.svg" alt="Hotel" />
+                <div class="thumbs">
+                    <img src="img/quarto.svg" />
+                    <img src="img/saguao.svg" />
+                    <img src="img/restaurante.svg" />
+                    <img src="img/recepcao.svg" />
+                </div>
+            </div>
+
+            <div class="tabs">
+                <span>Visão geral</span>
+                <span>|</span>
+                <span>Informações</span>
+                <span>|</span>
+                <span>Quartos</span>
+                <span>|</span>
+                <span>Políticas</span>
+            </div>
+
+            <div class="avaliacao">
+                <span class="stars">★★★★☆</span>
+                <span class="nota">(Muito boa)</span>
+                <a href="reserva.html">Reservar agora</a>
+            </div>
+
+            <p class="endereco"><i class="fas fa-map-marker-alt"></i> Palm Jumeirah Crescent, 300 – Dubai, Emirados
+                Árabes Unidos</p>
+
+            <hr />
+
+            <div class="descricao">
+                <strong>Descrição:</strong>
+                <p>
+                    O Hotel Grand Elegance é um luxuoso e sofisticado hotel 5 estrelas localizado em um ponto
+                    privilegiado da cidade, proporcionando vistas deslumbrantes e fácil acesso às principais atrações
+                    turísticas, centros comerciais e culturais. Com uma arquitetura moderna e elegante, o hotel
+                    impressiona desde a chegada, com uma fachada imponente e áreas comuns decoradas com obras de arte,
+                    iluminação refinada e materiais nobres.
+                    Seu design interior combina elementos contemporâneos com toques clássicos, criando uma atmosfera
+                    acolhedora e exclusiva. Os quartos e suítes foram cuidadosamente planejados para oferecer o máximo
+                    de conforto, com camas king size, isolamento acústico, banheiros de mármore, banheiras de
+                    hidromassagem e tecnologia de automação de ponta.
+                    A experiência no Grand Elegance vai além da hospedagem: o hotel conta com restaurantes gourmet
+                    comandados por chefs premiados, um spa completo com tratamentos relaxantes e terapêuticos, academia
+                    de última geração, piscinas climatizadas e espaços dedicados ao bem-estar. Os hóspedes ainda podem
+                    desfrutar de serviços personalizados, como concierge 24h, traslado executivo, salas para eventos
+                    corporativos e experiências exclusivas sob demanda.
+                    Ideal tanto para viagens de negócios quanto para momentos de lazer, o Hotel Grand Elegance redefine
+                    o conceito de hospitalidade, oferecendo um serviço impecável, atenção aos mínimos detalhes e uma
+                    atmosfera de requinte incomparável...
+                </p>
+                <button class="read-more">Ler mais</button>
+            </div>
+
+            <hr />
+
+            <div class="comodidades">
+                <strong>Comodidades:</strong>
+                <div class="icones">
+                    <i class="fas fa-wifi"></i> Wi-Fi gratuito
+                    <i class="fas fa-utensils"></i> Restaurante
+                    <i class="fas fa-parking"></i> Estacionamento
+                    <i class="fas fa-swimmer"></i> Piscina
+                    <i class="fas fa-dumbbell"></i> Academia
+                    <i class="fas fa-spa"></i> Spa
+                    <i class="fas fa-cocktail"></i> Bar
+                    <i class="fas fa-bed"></i> Serviço de Quarto
+
+                </div>
+            </div>
+        </section>
+
+        <aside class="hoteis-relacionados">
+            <div class="hotel-item">
+                <img src="https://cdn.pixabay.com/photo/2017/01/28/19/31/landscape-2016308_1280.jpg" />
+                <div>
+                    <h3>Hotel Metropolitan Business & Suites</h3>
+                    <p>Canal Grande, 42 – San Marco, Veneza, Itália</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWx8ZW58MHx8MHx8fDA%3D" />
+                <div>
+                    <h3>Aurora Grand Hotel</h3>
+                    <p>5th Avenue, 1200 – Nova York, NY, EUA</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <img
+                    src="https://images.stockcake.com/public/a/b/2/ab2fecc0-7460-449c-8653-92081fa3c9c5_large/beachside-hotel-room-stockcake.jpg" />
+                <div>
+                    <h3>Hotel Mountain Lodge & Spa</h3>
+                    <p>Shinjuku Gyoen Street, Tóquio, Japão</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1675745329954-9639d3b74bbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWx8ZW58MHx8MHx8fDA%3D" />
+                <div>
+                    <h3>Imperium Hotel & Spa</h3>
+                    <p>Rua Oxford, 321 – Londres, Reino Unido</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+            <div class="hotel-item">
+                <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" />
+                <div>
+                    <h3>Royal Horizon Palace</h3>
+                    <p>Av. Central, 1500 – Lisboa, Portugal</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="hotel-item">
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1661929519129-7a76946c1d38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG90ZWx8ZW58MHx8MHx8fDA%3D" />
+                <div>
+                    <h3>Urban Style Boutique Hotel</h3>
+                    <p>Rue Lafayette, 88 – Paris, França</p>
+                    <div class="stars">★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="hotel-item">
+                <img
+                    src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWx8ZW58MHx8MHx8fDA%3D" />
+                <div>
+                    <h3>Lakeside View Inn</h3>
+                    <p>Lakefront Drive, 200 – Queenstown, Nova Zelândia</p>
+                    <div class="stars">★★★☆☆</div>
+                </div>
+            </div>
+
+            <div class="hotel-item">
+                <img
+                    src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvdGVsfGVufDB8fDB8fHww" />
+                <div>
+                    <h3>Villa Serena Resort</h3>
+                    <p>Ilha de Bali, Jalan Sunset – Indonésia</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
 </body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>GrandLuxe</h3>
+                <p>Somos uma rede de hotéis de luxo que oferece experiências exclusivas e inesquecíveis.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Suporte</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Contato</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Rua São Paulo, 456, São Paulo, Brasil
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> +55 (11) 1234-5678
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> contato@grandluxe.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 GrandLuxe. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
 </html>

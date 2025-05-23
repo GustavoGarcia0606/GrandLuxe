@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Procurar Hotéis | GrandLuxe</title>
+
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    main {
+      display: flex;
+      padding: 70px;
+      gap: 40px;
+  font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-filters {
+      width: 250px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      color: #000000;
+    }
+
+    .search-filters h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #2874f0;
+    }
+
+    .search-filters label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .search-filters input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .search-filters .search-btn {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background-color: #2874f0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hotel-results {
+      flex: 1;
+    }
+
+    .hotel-results h2 {
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    .hotel-card {
+      display: flex;
+      gap: 20px;
+      background-color: #ffffff83;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .hotel-card img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px 10px 10px 10px;
+    }
+
+    .hotel-info {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hotel-info h3 {
+      margin: 0;
+      color: #2874f0;
+    }
+
+    .hotel-info p {
+      margin: 5px 0;
+      color: #000000;
+    }
+
+    .hotel-info a{
+      align-self: start;
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 5px;
+      background-color: #2874f0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hotel-info a:hover {
+      background-color: #5c8fe7;
+    }
+
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+      }
+
+      .hotel-card {
+        flex-direction: column;
+      }
+
+      .hotel-card img {
+        width: 100%;
+      }
+
+      .search-filters {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">🏨</div>
+      <span>GRANDLUXE</span>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="#">Sobre</a>
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar" />
+        <button>🔍</button>
+      </div>
+      <a href="#">Suporte</a>
+      <span>|</span>
+      <a class="reservas-btn" href="reserva.html">Reservas</a>
+    </nav>
+
+    <div class="user">
+      <a href="login.html">Login</a>
+      <div class="avatar">👤</div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="search-filters">
+      <h2>Filtros de Busca</h2>
+      <label>
+        Local:
+        <input type="text" placeholder="Digite a cidade">
+      </label>
+      <label>
+        Entrada:
+        <input type="date">
+      </label>
+      <label>
+        Saída:
+        <input type="date">
+      </label>
+      <label>
+        Hóspedes:
+        <input type="number" min="1" value="1">
+      </label>
+      <button class="search-btn">Buscar</button>
+    </div>
+
+    <!-- RESULTADOS -->
+    <div class="hotel-results">
+      <h2>Hotéis Encontrados</h2>
+
+      <div class="hotel-card">
+        <img src="img/hotel.svg" alt="Hotel 1">
+        <div class="hotel-info">
+          <h3>Hotel Vacance</h3>
+          <p>Local: Aguas de Lindoia</p>
+          <p><strong>R$ 600/noite</strong></p>
+          <a href="hoteis.html">Ver mais</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+
+</html>
