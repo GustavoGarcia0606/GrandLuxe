@@ -172,3 +172,113 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .overlay h1 {
+    font-size: 100px;
+  }
+
+  .search-box input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .logo,
+  .nav,
+  .user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .nav a,
+  .user a {
+    font-size: 14px;
+  }
+
+  .search-box input {
+    width: 100px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 15px;
+    font-size: 12px;
+  }
+  
+  .footer .center p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 40px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .search-hotels-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .user a {
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+  }
+
+  .search-box {
+    padding: 1px 3px;
+  }
+
+  .search-box input {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .reservas-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
+
+  .logo-icon {
+    font-size: 20px;
+  }
+}
