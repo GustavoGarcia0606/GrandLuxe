@@ -134,12 +134,15 @@
             border-radius: 8px;
             font-weight: 600;
             cursor: pointer;
-            transition: background-color 0.2s ease;
         }
 
         .reserva-tabs button.active {
-            background-color: #2874f0;
-            color: #fff;
+            padding: 15px 20px;
+            background-color: #ffffffcc;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
         }
 
         .icone-verde,
@@ -166,25 +169,8 @@
             background-color: #F44336;
             /* Vermelho */
         }
-
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-            }
-
-            .hotel-card {
-                flex-direction: column;
-            }
-
-            .hotel-card img {
-                width: 100%;
-            }
-
-            .search-filters {
-                width: 100%;
-            }
-        }
     </style>
+
 </head>
 
 <body>
@@ -201,7 +187,7 @@
             <a href="#">Sobre</a>
             <div class="search-box">
                 <input type="text" placeholder="Pesquisar" />
-                <button>🔍</button>
+                <button>🔍︎</button>
             </div>
             <a href="#">Suporte</a>
             <span>|</span>
@@ -218,12 +204,12 @@
 
         <div class="hotel-results">
             <div class="reserva-tabs">
-                <button class="ativo">
+                <button class="active">
                     <span class="icone-verde"></span> Reservas Ativas
-                </button>
+                </button>|
                 <button>
                     <span class="icone-amarelo"></span> Reservas em Andamento
-                </button>
+                </button>|
                 <button>
                     <span class="icone-vermelho"></span> Reservas Inativas
                 </button>
